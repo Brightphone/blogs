@@ -601,6 +601,22 @@ c.draw = function() {
                             <span class="hidden">Google+</span>
                         </a>
                     </section>
+                    <div id="gitalk-container"></div>
+      				<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+      				<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      				<script>
+       				const gitalk = new Gitalk({
+         				clientID: '6cff19f118e9d230a64d',
+         				clientSecret: '0082dab90ba29561e3cf52be23e79ec34367c29f',
+         				repo: 'comments',
+         				owner: 'brightphone',
+         				admin: ['brightphone'],
+         				id: "/a-full-and-comprehensive-style-test",
+         				distractionFreeMode: false
+       				});
+       				gitalk.render('gitalk-container')
+      				</script>
+<!-- 
                     <div id="gitmentContainer"></div>
 					<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 					<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
@@ -615,6 +631,7 @@ c.draw = function() {
 					});
 					gitment.render('gitmentContainer');
 					</script>
+ -->
                 
             
                 

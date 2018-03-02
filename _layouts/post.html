@@ -111,7 +111,20 @@ class: 'post-template'
     </article>
 
 </main>
-
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'brightphone',
+    repo: 'comments',
+    oauth: {
+        client_id: '6cff19f118e9d230a64d',
+        client_secret: '0082dab90ba29561e3cf52be23e79ec34367c29f',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
 <aside class="read-next">
 
     <!-- [[! next_post ]] -->{{ post.url | remove: '/' }}

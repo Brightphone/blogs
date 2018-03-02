@@ -10,9 +10,9 @@ language: 'en-uk'
 name: 'Brightness'
 description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
 
-short_url: 'brightphone.github.io/blogs/'
+short_url: 'Brightphone.github.io/blogs/'
 google_analytics: UA-69281367-1
-disqus: username
+disqus: Brightphone
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /blogs/
 
@@ -50,8 +50,8 @@ repo: blogs
 branch: master
 relative_source: ../blogs/
 destination: ../blogs-pages/
-production_url:  https://brightphone.github.io/blogs/
-source_url:  https://github.com/brightphone/blogs/
+production_url:  https://Brightphone.github.io/blogs/
+source_url:  https://github.com/Brightphone/blogs/
 
 exclude:
   - README.md

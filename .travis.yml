@@ -14,9 +14,9 @@ script: bundle exec rake site:deploy --quiet #--trace
 # get Github token from your Travis CI profile page
 # gem install travis
 # GH_TOKEN from https://github.com/settings/tokens
-# travis encrypt -r Brightphone/blogs 'GIT_NAME="Brightphone" GIT_EMAIL="zbrihgtz@163.com" GH_TOKEN=661fe74c316c62a02c15d3ca2fe2dcd43ba6c88f'
+# travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
 env:
   global:
-    secure: "csMElW7OxcBtyfk/Axie/rUPaP3avmMZ0LzrLyiqIoRivxkhjPbwzT1p/9oZgF2YbkeLvJQvpo6mtMfLSEmXgk7NGUks1WmgGCK78u3rhdG1drEqqHr3CKHN5igZpw1InZlawq8k06y4tLiNtAZ8USod053jLb/CG7md81u3claWB1KS38rrmNw+h/PnVb9OIXrYiMDLjtHK5FXkLgeXncS0IOo/a7Xry2r8mh+uqQPtGZ4psEjvhFBqZeUjp78PHH65peAGGOBC5hd5p+XlfGmkAaLrR2mVD83mm8vgsiDqhSher7JDAXoZkc6xCRj59ZR98GnGzrVFyNEcQO9Iz+1+4ZlTBeF6bX6VBDITVmg9PB0ZNR0PhkX/ThUQDQKOxwJ6sWvYSx0Qg/qbnemo+QHdKzg4j1d1XTGMNCFY+kf9Kd5nKzayuoMBKmfArXrWA3YOWlaVSYjkc82mCxXsl9T5/Zj19yiD+WnBYLNqyEDDIqpgeV5Ch7vm04uV++wqjF/4mpWtXUt+6n7U/nSE2UePyFo25/YYS1ZtOp/UwWUBohwddSsrpDb8Pkit1FXmYB1n8mKeRW8GuieOv8FF1JYTgAJRoLxv8HsA/O5pxTBa8o1iojxRMTNlxm3Xndh7bdecwDzCHIhqWCWx/NgvN1CxGgQkqktBJ3GCci4n27o="
+    secure: "vsoQFOqGMmmze4Mna3abo6l9KQI6pj6t8M4lTxI/WdhtsN6zAqcKk4YhXG3FLyZGhDrnNIHNgCLG7CAzUuX+sZGI2I1YvkYZhIoc64ljaDdHx1nw9L26vwF+vS2IyZrMX8L0MkM6BPmyN4GKD3jPaWL7IGWU3FUkGPRf7xSfTgTfh6N0hRZH1rZAqioiQB+V7HI4WF2Gj2ZW4NUOONbpUKcE4+P8KgxNuUh4Xk2E94yPyUwPIk59jZiGbbi7LWhxDSjcK0Lg5kTnatZeTf12+C0jLWn5DgLSVWvgE1utI+tSSOFstkZiDbatThNG61p2oL4fa0BmEw5LW+scv/r/yi8g8e/cwStzstPi8vUHD1g5qm6L3P4w/0qzQQW+0kIoeuqQjxeOXveOmaop+Zv6Om++eALznMDqUfmyvZKCsGwsasvsL2/Iw8qdz5NHKKuS/2g+Y2CNffdhnc8E7ubdNiLjG9gvrirxQqg/Xcy4G1FAx+4mYLLc3jjkU8eWAx8icm5jdPkV8fD2OeCY8yKSy83MDU7+n88JYrRRTSDDolaobCemXSvumwDtAGW3atltYSiY63vXpwjvj3+valrvohFDYXVoZBqQ/QQb0KL6Rvaprg1TKVGYvYTqPWElAo+VruMPIk0CGjo2aJg3EukR3ljotBMRzR2kNozKCcQkWDU="
   only:
     - master

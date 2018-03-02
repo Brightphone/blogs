@@ -10,7 +10,7 @@ logo: 'assets/images/ghost.png'
 author: martin
 categories: martin
 ---
-
+jjjj
 I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.
 
 Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity.
@@ -101,3 +101,5 @@ And when this happens, and when we allow freedom ring, when we let it ring from 
 *Free at last! Free at last!*
 
 *Thank God Almighty, we are free at last!*
+
+

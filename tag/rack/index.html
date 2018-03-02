@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Page Meta -->
-    <title>Finding The Way Home</title>
+    <title>Brightness</title>
     <meta name="description" content="A beautiful narrative written with the world's most elegant publishing platform. The story begins here." />
 
     <!-- Mobile Meta -->
@@ -26,31 +26,31 @@
     <style>.hljs { background: none; }</style>
 
     <!-- Ghost outputs important style and meta data with this tag -->
-        <link rel="canonical" href="/blogs//" />
+        <link rel="canonical" href="/blogs//tag/rack/" />
     <meta name="referrer" content="origin" />
     <link rel="next" href="/blogs/page2/" />
 
     <meta property="og:site_name" content="Brightness" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Finding The Way Home" />
+    <meta property="og:title" content="Brightness" />
     <meta property="og:description" content="A beautiful narrative written with the world's most elegant publishing platform. The story begins here." />
-    <meta property="og:url" content="/blogs//" />
-    <meta property="og:image" content="/blogs/assets/images/cover1.jpg" />
+    <meta property="og:url" content="/blogs//tag/rack/" />
+    <meta property="og:image" content="/blogs/assets/images/cover2.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Finding The Way Home" />
+    <meta name="twitter:title" content="Brightness" />
     <meta name="twitter:description" content="A beautiful narrative written with the world's most elegant publishing platform. The story begins here." />
-    <meta name="twitter:url" content="/blogs//" />
-    <meta name="twitter:image:src" content="/blogs/assets/images/cover1.jpg" />
+    <meta name="twitter:url" content="/blogs//tag/rack/" />
+    <meta name="twitter:image:src" content="/blogs/assets/images/cover2.jpg" />
 
     <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "Website",
     "publisher": "Brightness",
-    "name": "Finding The Way Home",
-    "url": "/blogs//",
-    "image": "/blogs/assets/images/cover1.jpg",
+    "name": "Brightness",
+    "url": "/blogs//tag/rack/",
+    "image": "/blogs/assets/images/cover2.jpg",
     "description": "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
 }
     </script>
@@ -60,7 +60,7 @@
 
 
 </head>
-<body class="home-template nav-closed">
+<body class="tag-template nav-closed">
 
     <!-- The blog navigation links -->
     <div class="nav">
@@ -69,7 +69,7 @@
         <span class="hidden">Close</span>
     </a>
     <ul>
-        <li class="nav-home  nav-current" role="presentation"><a href="/blogs/">Home</a></li>
+        <li class="nav-home " role="presentation"><a href="/blogs/">Home</a></li>
         <li class="nav-about " role="presentation"><a href="/blogs/about">About</a></li>
         <li class="nav-fables " role="presentation"><a href="/blogs/tag/fables">Fables</a></li>
         <li class="nav-speeches " role="presentation"><a href="/blogs/tag/speeches">Speeches</a></li>
@@ -88,12 +88,14 @@
     <div class="site-wrapper">
 
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- < default -->
+        <!-- dynamically overriding backgrounds for tags as well as descriptions -->
+
+
+<!-- default -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- The big featured header  -->
-<header class="main-header "
-        style="background-image: url(/blogs/assets/images/cover1.jpg) ">
+<!-- If we have a tag cover, display that - else blog cover - else nothing -->
+<header class="main-header tag-head " style="background-image: url(/blogs/assets/images/cover2.jpg) ">
     <nav class="main-nav overlay clearfix">
         <a class="blog-logo" href="/blogs/"><img src="/blogs/assets/images/ghost.png" alt="Blog Logo" /></a>
         
@@ -102,11 +104,14 @@
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">Brightness</h1>
-            <h2 class="page-description">A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</h2>
+            <h1 class="page-title">Rack</h1>
+            <h2 class="page-description">
+            
+			    A 6-post collection
+            
+            </h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <!-- The main content area on the homepage -->
@@ -118,231 +123,13 @@
         
             <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 10 </span>
-     
-        <a class="older-posts" href="/blogs/page2/" title="Next Page">Older Posts &raquo;</a>
+    <span class="page-number"> Page 1 of 1 </span>
      
 </nav>
         
     </div>
 
     <!-- This is the post loop - each post will be output using this markup -->
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/blogs/2017-summary">2017 年总结 - 写在转职后的一个月</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>一直以来都很少写这些比较软性的文章，一方面觉得没有太多可以写的事情，另一方面觉得写这种博客对读者来说没有太大的价值，不过作者在今天还是想对过去的 2017 年进行简单的总结，让自己更加清楚这一年有哪些的变化。 年度总结 在今年年初的时候曾经定下了两个非常简单的计划：看 30 本书、完成 20 篇博客；前者是一个输入的过程，后者是输出的过程，这种可以量化的指标比较容易记录，对于完成与否也有一个确切的答案。 今年的计划大体来看完成度还是比较高的，如果算上这篇总结今年总共写了 35 篇博客，也阅读了 23 本书籍，对于博客来说确实超额完成了任务，不过现在看来每年读 30 本书确实是一件比较困难的事情。 作为软件工程师，在日常学习或者工作的时候，我们阅读的很多资料都来自于一些网站以及官方文档，有的文档的长度跟一本书也是差不了多少的，但是它并不是一本书；除此之外，阅读的很多论文也不属于这个类别，所以在制定 18 年的计划时可能会对这一部分进行简单的调整。 毕业 2017 年是作者毕业的年份，从 7 月份毕业、8 月份入职到现在算了一下大概有 5... <a class="read-more" href="/blogs/2017-summary">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-
-            <!-- [[tags prefix=" on "]] -->
-            
-                on
-                
-                    
-                       <a href='/blogs/tag/blog'>Blog</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/summary'>Summary</a>
-                    
-                
-            
-            <time class="post-date" datetime="2017-12-27">27 Dec 2017</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/blogs/consensus">分布式一致性与共识算法</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>区块链技术是近几年逐渐变得非常热门的技术，以比特币为首的密码货币其实已经被无数人所知晓，但是却很少有人会去研究它们的底层技术，也就是作为一个分布式网络比特币等加密货币是如何工作的。 无论是 Bitcoin、Ethereum 还是 EOS，作为一个分布式网络，首先需要解决分布式一致性的问题，也就是所有的节点如何对同一个提案或者值达成共识，这一问题在一个所有节点都是可以被信任的分布式集群中都是一个比较难以解决的问题，更不用说在复杂的区块链网络中了。 分布式一致性 在一个分布式系统中，如何保证集群中所有节点中的数据完全相同并且能够对某个提案（Proposal）达成一致是分布式系统正常工作的核心问题，而共识算法就是用来保证分布式系统一致性的方法。 然而分布式系统由于引入了多个节点，所以系统中会出现各种非常复杂的情况；随着节点数量的增加，节点失效、故障或者宕机就变成了一件非常常见的事情，解决分布式系统中的各种边界条件和意外情况也增加了解决分布式一致性问题的难度。 在一个分布式系统中，除了节点的失效是会导致一致性不容易达成的主要原因之外，节点之间的网络通信收到干扰甚至阻断以及分布式系统的运行速度的差异都是解决分布式系统一致性所面临的难题。 CAP 在 1998 年的秋天，加州伯克利大学的教授 Eric Brewer 第一次发布了 CAP 理论，在 1999 年论文 Brewer’s Conjecture and the Feasibility of... <a class="read-more" href="/blogs/consensus">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-
-            <!-- [[tags prefix=" on "]] -->
-            
-                on
-                
-                    
-                       <a href='/blogs/tag/consensus'>Consensus</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/blockchain'>Blockchain</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/bitcoin'>Bitcoin</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/ethereum'>Ethereum</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/EOS'>Eos</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/POW'>Pow</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/POS'>Pos</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/DPOS'>Dpos</a>
-                    
-                
-            
-            <time class="post-date" datetime="2017-12-18">18 Dec 2017</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/blogs/metaprogramming">谈元编程与表达能力</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>在这篇文章中，作者会介绍不同的编程语言如何增强自身的表达能力，在写这篇文章的时候其实就已经想到这可能不是一篇有着较多受众和读者的文章。不过作者仍然想跟各位读者分享一下对不同编程语言的理解，同时也对自己的知识体系进行简单的总结。 当我们刚刚开始学习和了解编程这门手艺或者说技巧时，一切的知识与概念看起来都非常有趣，随着学习的深入和对语言的逐渐了解，我们可能会发现原来看起来无所不能的编程语言成为了我们的限制，尤其是在我们想要使用一些元编程技巧的时候，你会发现有时候语言限制了我们的能力，我们只能一遍一遍地写重复的代码来解决本可以轻松搞定的问题。 元编程 元编程（Metaprogramming）是计算机编程中一个非常重要、有趣的概念，维基百科 上将元编程描述成一种计算机程序可以将代码看待成数据的能力。 Metaprogramming is a programming technique in which computer programs have the ability to treat programs as their data. 如果能够将代码看做数据，那么代码就可以像数据一样在运行时被修改、更新和替换；元编程赋予了编程语言更加强大的表达能力，能够让我们将一些计算过程从运行时挪到编译时、通过编译期间的展开生成代码或者允许程序在运行时改变自身的行为。 总而言之，元编程其实是一种使用代码生成代码的方式，无论是编译期间生成代码，还是在运行时改变代码的行为都是『生成代码』的一种，下面的代码其实就可以看作一种最简单的元编程技巧： int... <a class="read-more" href="/blogs/metaprogramming">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-
-            <!-- [[tags prefix=" on "]] -->
-            
-                on
-                
-                    
-                       <a href='/blogs/tag/metaprogramming'>Metaprogramming</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/macro'>Macro</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/runtime'>Runtime</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/c'>C</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/elixir'>Elixir</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/rust'>Rust</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/ruby'>Ruby</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/iOS'>Ios</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/server'>Server</a>
-                    
-                
-            
-            <time class="post-date" datetime="2017-12-10">10 Dec 2017</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/blogs/docker">Docker 核心技术与实现原理</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>提到虚拟化技术，我们首先想到的一定是 Docker，经过四年的快速发展 Docker 已经成为了很多公司的标配，也不再是一个只能在开发阶段使用的玩具了。作为在生产环境中广泛应用的产品，Docker 有着非常成熟的社区以及大量的使用者，代码库中的内容也变得非常庞大。 同样，由于项目的发展、功能的拆分以及各种奇怪的改名 PR，让我们再次理解 Docker 的的整体架构变得更加困难。 虽然 Docker 目前的组件较多，并且实现也非常复杂，但是本文不想过多的介绍 Docker 具体的实现细节，我们更想谈一谈 Docker 这种虚拟化技术的出现有哪些核心技术的支撑。 首先，Docker 的出现一定是因为目前的后端在开发和运维阶段确实需要一种虚拟化技术解决开发环境和生产环境环境一致的问题，通过 Docker 我们可以将程序运行的环境也纳入到版本控制中，排除因为环境造成不同运行结果的可能。但是上述需求虽然推动了虚拟化技术的产生，但是如果没有合适的底层技术支撑，那么我们仍然得不到一个完美的产品。本文剩下的内容会介绍几种 Docker 使用的核心技术，如果我们了解它们的使用方法和原理，就能清楚 Docker 的实现原理。 Namespaces 命名空间... <a class="read-more" href="/blogs/docker">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-
-            <!-- [[tags prefix=" on "]] -->
-            
-                on
-                
-                    
-                       <a href='/blogs/tag/docker'>Docker</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/namespaces'>Namespaces</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/cgroups'>Cgroups</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/unionfs'>Unionfs</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/aufs'>Aufs</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/server'>Server</a>
-                    
-                
-            
-            <time class="post-date" datetime="2017-11-30">30 Nov 2017</time>
-        </footer>
-    </article>
     
     <article class="post">
         <header class="post-header">
@@ -651,9 +438,7 @@
     
         <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 10 </span>
-     
-        <a class="older-posts" href="/blogs/page2/" title="Next Page">Older Posts &raquo;</a>
+    <span class="page-number"> Page 1 of 1 </span>
      
 </nav>
     

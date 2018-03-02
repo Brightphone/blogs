@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>brightphone.github.io/blogs/</title>
+   
+   <link></link>
+   <description>A beautiful narrative written with the world's most elegant publishing platform. The story begins here.</description>
+   <language>en-uk</language>
+   <managingEditor> </managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>部署 Node.js+MongoDB App</title>
+	  <link>/blogs//bu-shu-node-jsmongodb-ying-yong</link>
+	  <author></author>
+	  <pubDate>2015-05-22T09:55:22+00:00</pubDate>
+	  <guid>/blogs//bu-shu-node-jsmongodb-ying-yong</guid>
+	  <description><![CDATA[
+	     <p>因为最近在为 SportJoin 写 Web API, 由于对大部分的工作已经完成, 所以开始尝试将 Node 代码部署到服务器上.</p>
+
+<p>我在部署的过程中遇到了很多的问题, 在网上找了很多的教程都完全不详细, 并不能直接解决我的问题, 不过所幸经过自己的尝试和摸索最后还是解决了.</p>
+
+<p>我在开发 SportJoin Web API 的时候使用的是 Restify + Mongodb, 所以部署的时候要解决两个问题, 一个是 Mongodb 的安装, 另一个是代码的部署.</p>
+
+<h2 id="digitalocean">DigitalOcean</h2>
+
+<p>因为在一两个月之前, 我曾经注册过 DigitalOcean 的账号,  而且体验也是蛮不错的. 所以在这次我会把我的代码部署到 DigitalOcean 上.</p>
+
+<p>首先会创建一个 droplet, 然后选择 Ubuntu, 并在 Applications 中选择 Node 环境.</p>
+
+<p><img src="/content/images/2015/05/18BCAAB6-D88F-4820-9B88-28567A22CB5A.png" alt="" /></p>
+
+<p>如果你没有使用 DigitalOcean, 而是使用其他的云服务器, 那么唯一的区别就是. <strong>你需要手动安装 Node 环境.</strong></p>
+
+<h2 id="安装-mongodb">安装 Mongodb</h2>
+
+<p>安装 Mongodb 还是很简单的, 你可以看<a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/">这篇教程</a>. 当然在 mongodb 的官网上也有在其他 linux 发行版的安装方法.</p>
+
+<p>你只需要远程登录到你的服务器</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@url.com
+</code></pre></div></div>
+
+<p>然后依次输入下面的命令就好了</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+</code></pre></div></div>
+
+<p>它们会自动的安装最新版本的 mongodb.</p>
+
+<p>mongodb 就已经安装完成了. 然后你需要在 mongodb 中创建与你的 Web 应用相同名字的 document(与本地开发环境中创建的相同).</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mongo
+
+&gt; use sportjoin
+</code></pre></div></div>
+
+<h2 id="git-clone">git clone</h2>
+
+<p>我从 bitbucket 上使用 git clone 命令, 将我的 Node 代码抓去下来, 然后先安装所 App 所需要的依赖.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;repo.git&gt;
+cd &lt;folder&gt;
+npm install
+</code></pre></div></div>
+
+<h2 id="pm2">pm2</h2>
+
+<p>在这里的部署中, 我没有使用 forever 和 nginx, 而是使用了 <a href="https://github.com/Unitech/PM2">pm2</a> 这是另一个自动部署的工具, 它的使用炒鸡简单.</p>
+
+<p>先在全局中安装 pm2</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g pm2
+</code></pre></div></div>
+
+<p>然后在工程的根目录下运行 Web 应用</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd &lt;folder&gt;
+pm2 start &lt;app.js&gt;
+</code></pre></div></div>
+
+<p>到目前为止部署就完成了, 对于更加详细的配置, 可以看 pm2 github 的文档找到更多的资料.</p>
+
+<h2 id="总结">总结</h2>
+
+<p>总体来说部署还是很容易的, 在之后的更新中只需要在本地 push 代码, 然后在服务器上 pull 下来就可以了. 不需要 nginx 和 forever.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

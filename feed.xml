@@ -8,6 +8,32 @@
     
       
       <item>
+        <title></title>
+        
+          <description></description>
+        
+        <pubDate>Mon, 05 Mar 2018 03:22:49 +0000</pubDate>
+        <link>
+        /2015-04-22-swift-zhong-init-de-shi-yong</link>
+        <guid isPermaLink="true">/2015-04-22-swift-zhong-init-de-shi-yong</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title></title>
+        
+          <description></description>
+        
+        <pubDate>Mon, 05 Mar 2018 03:22:49 +0000</pubDate>
+        <link>
+        /2015-04-12-ios-yuan-dai-ma-jie-xi-sdwebimage</link>
+        <guid isPermaLink="true">/2015-04-12-ios-yuan-dai-ma-jie-xi-sdwebimage</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>StackOverflow 黑魔法系列 &lt;2&gt;</title>
         
           <description>&lt;p&gt;距离上一次的 StackOverflow 黑魔法系列的 post 已经很久了, 自己也很久没有写技术博客了, 虽然这次带来的又是一篇水文. 但是好久没有写了, 写写水文也好试试手.&lt;/p&gt;
@@ -138,51 +164,6 @@
         <link>
         /guan-yu-xie-ios-wen-ti-de-jie-da</link>
         <guid isPermaLink="true">/guan-yu-xie-ios-wen-ti-de-jie-da</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Swift 类构造器的使用</title>
-        
-          <description>&lt;p&gt;这几天在使用 Swift 重写原来的一个运动社交应用 SportJoin.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Wed, 22 Apr 2015 20:21:15 +0800</pubDate>
-        <link>
-        /swift-zhong-init-de-shi-yong</link>
-        <guid isPermaLink="true">/swift-zhong-init-de-shi-yong</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>我只想安安静静地学 Node.js</title>
-        
-          <description>&lt;p&gt;这几天没有什么别的事情, 接的几个项目也没有给我 UI 设计图. 最近听说Node.js 这么~~火~~优雅, 兴趣也很大, 就来尝试学习一下.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sun, 19 Apr 2015 11:26:20 +0800</pubDate>
-        <link>
-        /zhi-xiang-an-an-jing-jing-di-xue-node-js</link>
-        <guid isPermaLink="true">/zhi-xiang-an-an-jing-jing-di-xue-node-js</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>iOS 源代码分析----SDWebImage</title>
-        
-          <description>&lt;p&gt;世人都说阅读源代码对于功力的提升是十分显著的, 但是很多的著名开源框架源代码动辄上万行, 复杂度实在太高, 在暑假的时候我曾经试图读一些开源框架的源代码, 比如说 &lt;code class=&quot;highlighter-rouge&quot;&gt;AFNetworking&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SDWebImage&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ReactiveCocoa&lt;/code&gt; 但是由于当时比较浮躁, 实在没法静下心来看, 而且有一些急功近利, 所以面对宝藏实在无力挖掘.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sun, 12 Apr 2015 13:44:09 +0800</pubDate>
-        <link>
-        /ios-yuan-dai-ma-jie-xi-sdwebimage</link>
-        <guid isPermaLink="true">/ios-yuan-dai-ma-jie-xi-sdwebimage</guid>
       </item>
       
     

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Page Meta -->
-    <title>Brightness</title>
+    <title>Author</title>
     <meta name="description" content="A beautiful narrative written with the world's most elegant publishing platform. The story begins here." />
 
     <!-- Mobile Meta -->
@@ -26,31 +26,31 @@
     <style>.hljs { background: none; }</style>
 
     <!-- Ghost outputs important style and meta data with this tag -->
-        <link rel="canonical" href="/blogs//tag/Masonry/" />
+        <link rel="canonical" href="/blogs//author/lewis/" />
     <meta name="referrer" content="origin" />
     <link rel="next" href="/blogs/page2/" />
 
     <meta property="og:site_name" content="Brightness" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Brightness" />
+    <meta property="og:title" content="Author" />
     <meta property="og:description" content="A beautiful narrative written with the world's most elegant publishing platform. The story begins here." />
-    <meta property="og:url" content="/blogs//tag/Masonry/" />
-    <meta property="og:image" content="/blogs/assets/images/cover2.jpg" />
+    <meta property="og:url" content="/blogs//author/lewis/" />
+    <meta property="og:image" content="/blogs/assets/images/cover4.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Brightness" />
+    <meta name="twitter:title" content="Author" />
     <meta name="twitter:description" content="A beautiful narrative written with the world's most elegant publishing platform. The story begins here." />
-    <meta name="twitter:url" content="/blogs//tag/Masonry/" />
-    <meta name="twitter:image:src" content="/blogs/assets/images/cover2.jpg" />
+    <meta name="twitter:url" content="/blogs//author/lewis/" />
+    <meta name="twitter:image:src" content="/blogs/assets/images/cover4.jpg" />
 
     <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "Website",
     "publisher": "Brightness",
-    "name": "Brightness",
-    "url": "/blogs//tag/Masonry/",
-    "image": "/blogs/assets/images/cover2.jpg",
+    "name": "Author",
+    "url": "/blogs//author/lewis/",
+    "image": "/blogs/assets/images/cover4.jpg",
     "description": "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
 }
     </script>
@@ -60,7 +60,7 @@
 
 
 </head>
-<body class="tag-template nav-closed">
+<body class="author-template nav-closed">
 
     <!-- The blog navigation links -->
     <div class="nav">
@@ -83,36 +83,61 @@
     <div class="site-wrapper">
 
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- dynamically overriding backgrounds for tags as well as descriptions -->
-
-
-<!-- default -->
+        <!-- < default}} -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- If we have a tag cover, display that - else blog cover - else nothing -->
-<header class="main-header tag-head " style="background-image: url(/blogs/assets/images/cover2.jpg) ">
-    <nav class="main-nav overlay clearfix">
-        <a class="blog-logo" href="/blogs/"><img src="/blogs/assets/images/ghost.png" alt="Blog Logo" /></a>
-        
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Masonry</h1>
-            <h2 class="page-description">
+<!-- The big featured header -->
+
+<!-- Everything inside the #author tags pulls data from the author -->
+<!-- #author  -->
+    <header class="main-header author-head " style="background-image: url(/blogs/assets/images/cover4.jpg) ">
+        <nav class="main-nav overlay clearfix">
+            <a class="blog-logo" href="/blogs/"><img src="/blogs/assets/images/ghost.png" alt="Blog Logo" /></a>
             
-			    A 1-post collection
+                <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
             
-            </h2>
-        </div>
-    </div>
-</header>
+        </nav>
+    </header>
+
+    <section class="author-profile inner">
+        
+            
+        
+            
+        
+            
+                
+                <figure class="author-image">
+                    <div class="img" style="background-image: url(/blogs/assets/images/lewis.jpeg)"><span class="hidden">Lewis Carroll's Picture</span></div>
+                </figure>
+                
+                <h1 class="author-title">Lewis Carroll</h1>
+                
+                    <div style="display:inline; text-align: justify; text-justify: inter-word;">
+                        <h2 class="author-bio">My real name is Charles Lutwidge Dodgson, but people call me Lewis. I'm an English writer, mathematician, logician, Anglican deacon and photographer. People know me best for writing about Alice.</h2>
+                    </div>
+                
+                <div class="author-meta">
+                    <span class="author-location icon-location">Cheshire, England</span>
+                    <span class="author-link icon-link"><a href="http://jekyller.github.io/jasper/">jekyller.github.io/jasper</a></span>
+                    <!-- <span class="author-stats"><i class="icon-stats"></i> [[plural ../pagination.total empty='No posts' singular='% post' plural='% posts']]</span> -->
+                    <span class="author-stats"><i class="icon-stats"></i>2 posts</span>
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+    </section>
+<!-- /author -->
 
 <!-- The main content area on the homepage -->
 <main id="content" class="content" role="main">
 
-    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    <!-- The tag below includes the post loop - partials/loop.hbs  -->
         <!-- Previous/next page links - only displayed on page 2+ -->
     <div class="extra-pagination inner">
         
@@ -128,12 +153,26 @@
     
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/blogs/ios-yuan-dai-ma-fen-xi-masonry">iOS 源代码分析----Masonry</a></h2>
+            <h2 class="post-title"><a href="/blogs/looking-glass-house">Looking-Glass house</a></h2>
         </header>
         <section class="post-excerpt">
-            <p>Masonry 是 Objective-C 中用于自动布局的第三方框架, 我们一般使用它来代替冗长, 繁琐的 AutoLayout 代码. Masonry 的使用还是很简洁的: [button mas_makeConstraints:^(MASConstraintMaker *make) { make.centerX.equalTo(self.view); make.top.equalTo(self.view).with.offset(40); make.width.equalTo(@185); make.height.equalTo(@38); }]; 从 mas_makeConstraints: 开始 其中最常用的方法就是 // View+MASAdditions.h -... <a class="read-more" href="/blogs/ios-yuan-dai-ma-fen-xi-masonry">&raquo;</a></p>
+            <p>One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten... <a class="read-more" href="/blogs/looking-glass-house">&raquo;</a></p>
         </section>
         <footer class="post-meta">
+            
+                
+            
+                
+            
+                
+
+                <img class="author-thumb" src="/blogs/assets/images/lewis.jpeg" alt="Author image" nopin="nopin" />
+                <!-- author -->
+                <a href='/blogs/author/lewis'>Lewis Carroll</a>
+
+                
+            
+                
             
                 
             
@@ -145,15 +184,52 @@
                 on
                 
                     
-                       <a href='/blogs/tag/iOS'>Ios</a>,
-                    
-                
-                    
-                       <a href='/blogs/tag/Masonry'>Masonry</a>
+                       <a href='/blogs/tag/fiction'>Fiction</a>
                     
                 
             
-            <time class="post-date" datetime="2015-04-27">27 Apr 2015</time>
+            <time class="post-date" datetime="1871-03-18">18 Mar 1871</time>
+        </footer>
+    </article>
+    
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="/blogs/down-the-rabbit-hole">Down The Rabbit Hole</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had... <a class="read-more" href="/blogs/down-the-rabbit-hole">&raquo;</a></p>
+        </section>
+        <footer class="post-meta">
+            
+                
+            
+                
+            
+                
+
+                <img class="author-thumb" src="/blogs/assets/images/lewis.jpeg" alt="Author image" nopin="nopin" />
+                <!-- author -->
+                <a href='/blogs/author/lewis'>Lewis Carroll</a>
+
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- [[tags prefix=" on "]] -->
+            
+                on
+                
+                    
+                       <a href='/blogs/tag/fiction'>Fiction</a>
+                    
+                
+            
+            <time class="post-date" datetime="1865-11-26">26 Nov 1865</time>
         </footer>
     </article>
     

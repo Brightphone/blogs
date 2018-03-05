@@ -1,0 +1,16 @@
+casper:
+  username: Draveness
+  name: Draveness
+  location: Maine, USA
+  url_full: https://draveness.me
+  url: draveness.me
+  bio: Rails / Elixir / iOS
+  assets: assets/images/draven.png
+Brightness:
+  username: Brightness
+  name: Brightness
+  location: NanJing, China
+  url_full: https://brightphone/github.io/blogs/
+  url: brightphone/github.io/blogs/
+  bio: Go Forward.
+  assets: assets/images/lewis.jpeg
